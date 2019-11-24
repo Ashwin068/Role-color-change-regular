@@ -3,19 +3,13 @@ var fs = require('fs');
 var randomColour = require('randomcolor'); // yes, the creator of this package does not speak the real english
 var Config = require('./config.json');
 
-bot.on("ready", async () => {
-	console.log(`PossumBot Is Now Activated`);
+bot.on("ready",() => {
+	console.log(`${bot.user.tag}yo bot ready!!`);
 	//Bot Status
 	bot.user.setActivity(`With GOLDi ki ma ki chut 15bar `);
 
-	try {
-		//Generates a invite link in the console...
-	let link = await bot.generateInvite(["ADMINISTRATOR"]);
-	console.log(link);
-	} catch(e) {
-		console.log(e.stack);
-	}
 });
+
 
 class Bot {
     constructor(){
