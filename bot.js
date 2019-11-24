@@ -4,10 +4,9 @@ var randomColour = require('randomcolor'); // yes, the creator of this package d
 var Config = require('./config.json');
 
 bot.on("ready", async () => {
-	console.log(`PossumBot Is Now Activated`);
 	//Bot Status
 	bot.user.setActivity(`With rainbow `);
-
+   }
 
 class Bot {
     constructor(){
