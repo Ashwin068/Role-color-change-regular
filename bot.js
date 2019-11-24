@@ -4,8 +4,7 @@ var randomColour = require('randomcolor'); // yes, the creator of this package d
 var Config = require('./config.json');
 
 bot.on("ready",() => {
-	console.log(`${bot.user.tag}yo bot ready!!`);
-	//Bot Status
+  console.log(`${bot.user.tag}yo bot ready!!`);
 	bot.user.setActivity(`With GOLDi ki ma ki chut 15bar `);
 
 });
