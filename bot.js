@@ -4,9 +4,18 @@ var randomColour = require('randomcolor'); // yes, the creator of this package d
 var Config = require('./config.json');
 
 bot.on("ready", async () => {
+	console.log(`PossumBot Is Now Activated`);
 	//Bot Status
-	bot.user.setActivity(`With rainbow `);
-   }
+	bot.user.setActivity(`With GOLDi ki ma ki chut 15bar `);
+
+	try {
+		//Generates a invite link in the console...
+	let link = await bot.generateInvite(["ADMINISTRATOR"]);
+	console.log(link);
+	} catch(e) {
+		console.log(e.stack);
+	}
+});
 
 class Bot {
     constructor(){
